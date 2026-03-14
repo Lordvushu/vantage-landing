@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vantage — CX Intelligence, Instantly</title>
+<meta name="description" content="AI-powered customer experience intelligence for South African businesses. We analyse HelloPeter reviews, support tickets, and customer feedback to surface the insights that matter.">
+<meta property="og:title" content="Vantage — CX Intelligence, Instantly">
+<meta property="og:description" content="Your customers are already talking. Vantage helps you listen.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_ZA">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#050508;--bg2:#0A0B10;--bg3:#0D0F16;--bg4:#12141D;--sf:#161822;
+  --ac:#00E8B8;--ac2:#00FFCC;--ac3:#00C49C;--ac-u:rgba(0,232,184,.04);
+  --ac-m:rgba(0,232,184,.07);--ac-g:rgba(0,232,184,.12);--ac-gs:rgba(0,232,184,.22);
+  --gd:#F0B942;--gd-m:rgba(240,185,66,.1);--rd:#FF6B6B;--rd-m:rgba(255,107,107,.1);
+  --t1:#EAEDF3;--t2:#7E869B;--t3:#464D62;
+  --b1:rgba(255,255,255,.04);--b2:rgba(255,255,255,.07);--ba:rgba(0,232,184,.12);
+  --f1:'Fraunces',Georgia,serif;--f2:'Outfit',system-ui,sans-serif;
+  --e:cubic-bezier(.16,1,.3,1);--eo:cubic-bezier(.22,1,.36,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f2);background:var(--bg);color:var(--t1);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.018'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+::selection{background:var(--ac);color:var(--bg)}
+a{color:inherit;text-decoration:none}
+.c{max-width:1160px;margin:0 auto;padding:0 2rem}
+
+@keyframes fu{from{opacity:0;transform:translateY(36px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+@keyframes sr{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(.5deg)}}
+@keyframes fr{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-8px) rotate(-.5deg)}}
+@keyframes pu{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}
+@keyframes gp{0%,100%{box-shadow:0 0 24px var(--ac-g),0 0 64px rgba(0,232,184,.04)}50%{box-shadow:0 0 36px var(--ac-gs),0 0 80px rgba(0,232,184,.08)}}
+@keyframes bg{from{width:0;opacity:.4}to{opacity:1}}
+@keyframes sh{0%{background-position:-200% 0}100%{background-position:200% 0}}
+@keyframes of{0%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-20px) scale(1.05)}66%{transform:translate(-15px,15px) scale(.97)}100%{transform:translate(0,0) scale(1)}}
+
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s var(--e),transform .9s var(--e)}
+.rv.v{opacity:1;transform:translateY(0)}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:.9rem 0;background:rgba(5,5,8,.6);backdrop-filter:blur(32px) saturate(1.4);-webkit-backdrop-filter:blur(32px) saturate(1.4);border-bottom:1px solid var(--b1);animation:fi .8s var(--e)}
+.ni{display:flex;justify-content:space-between;align-items:center}
+.lo{font-family:var(--f1);font-size:1.55rem;font-weight:500;letter-spacing:-.04em;display:flex;align-items:center;gap:.15rem}
+.ld{color:var(--ac);font-size:2rem;line-height:0;position:relative;top:2px}
+.nr{display:flex;align-items:center;gap:2.25rem}
+.nl{font-size:.82rem;font-weight:400;color:var(--t2);transition:color .3s;position:relative}
+.nl::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--ac);transition:width .3s var(--e)}
+.nl:hover{color:var(--t1)}.nl:hover::after{width:100%}
+.nc{font-size:.82rem;font-weight:600;padding:.55rem 1.4rem;background:var(--ac);color:var(--bg);border-radius:100px;letter-spacing:.01em;transition:all .35s var(--e)}
+.nc:hover{background:var(--ac2);transform:translateY(-1px);box-shadow:0 6px 28px var(--ac-gs)}
+
+/* HERO */
+.hero{min-height:100vh;min-height:100dvh;display:flex;align-items:center;padding:7rem 0 4rem;position:relative;overflow:hidden}
+.ho{position:absolute;border-radius:50%;pointer-events:none;filter:blur(1px)}
+.ho1{width:800px;height:800px;top:-25%;right:-20%;background:radial-gradient(circle,rgba(0,232,184,.08) 0%,rgba(0,232,184,.02) 40%,transparent 70%);animation:of 16s ease-in-out infinite}
+.ho2{width:500px;height:500px;bottom:-15%;left:-8%;background:radial-gradient(circle,rgba(240,185,66,.04) 0%,transparent 65%);animation:of 20s ease-in-out infinite reverse}
+.ho3{width:300px;height:300px;top:20%;left:30%;background:radial-gradient(circle,rgba(0,232,184,.03) 0%,transparent 70%);animation:of 14s ease-in-out infinite 3s}
+.hgb{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,black,transparent);-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,black,transparent);pointer-events:none}
+.hl{display:grid;grid-template-columns:1.1fr .9fr;gap:5rem;align-items:center;position:relative;z-index:2}
+.hc{max-width:560px}
+
+/* Badge */
+.hb{display:inline-flex;align-items:center;gap:.6rem;padding:.4rem 1rem .4rem .7rem;background:var(--ac-u);border:1px solid var(--ba);border-radius:100px;margin-bottom:2rem;animation:fu .8s var(--e)}
+.bi{width:18px;height:18px;border-radius:50%;background:var(--ac-m);display:flex;align-items:center;justify-content:center}
+.bd{width:5px;height:5px;background:var(--ac);border-radius:50%;animation:pu 2.5s ease-in-out infinite}
+.bt{font-size:.72rem;font-weight:500;color:var(--ac);letter-spacing:.06em;text-transform:uppercase}
+
+.hero h1{font-family:var(--f1);font-size:4.2rem;font-weight:400;line-height:1.04;letter-spacing:-.04em;margin-bottom:1.75rem;animation:fu .8s var(--e) .1s both}
+.hero h1 em{font-style:italic;color:var(--ac);position:relative}
+.hero h1 em::after{content:'';position:absolute;bottom:4px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ac),transparent);opacity:.3}
+.hp{font-size:1.05rem;font-weight:300;line-height:1.78;color:var(--t2);max-width:470px;margin-bottom:2.75rem;animation:fu .8s var(--e) .2s both}
+.ha{display:flex;gap:.85rem;align-items:center;animation:fu .8s var(--e) .3s both}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f2);font-weight:600;cursor:pointer;transition:all .35s var(--e);border:none;text-decoration:none}
+.bp{padding:.9rem 2rem;background:var(--ac);color:var(--bg);border-radius:100px;font-size:.9rem;letter-spacing:.01em}
+.bp:hover{background:var(--ac2);transform:translateY(-2px);box-shadow:0 8px 36px var(--ac-gs),0 2px 8px var(--ac-g)}
+.bp svg{transition:transform .3s var(--e)}.bp:hover svg{transform:translateX(3px)}
+.bs{padding:.9rem 2rem;background:rgba(255,255,255,.03);color:var(--t1);border:1px solid var(--b2);border-radius:100px;font-size:.9rem;font-weight:400;letter-spacing:.01em}
+.bs:hover{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.12);transform:translateY(-1px)}
+
+/* HERO CARD */
+.hv{position:relative;animation:sr 1s var(--e) .35s both}
+.rc{background:linear-gradient(165deg,var(--bg3) 0%,var(--bg2) 100%);border:1px solid var(--b2);border-radius:20px;padding:2rem;box-shadow:0 24px 64px rgba(0,0,0,.4),0 0 0 1px rgba(255,255,255,.02) inset;animation:gp 5s ease-in-out infinite;position:relative;overflow:hidden}
+.rc::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac-gs),transparent);background-size:200% 100%;animation:sh 4s linear infinite}
+.ch{display:flex;justify-content:space-between;align-items:center;padding-bottom:1.1rem;margin-bottom:1.4rem;border-bottom:1px solid var(--b1)}
+.ct{font-size:.7rem;font-weight:600;color:var(--t3);letter-spacing:.1em;text-transform:uppercase}
+.cg{font-size:.65rem;font-weight:600;padding:.25rem .7rem;background:var(--ac-m);color:var(--ac);border-radius:100px;letter-spacing:.04em;text-transform:uppercase}
+.sb{margin-bottom:1.5rem}
+.srow{display:flex;align-items:baseline;gap:.75rem}
+.sn{font-family:var(--f1);font-size:4rem;font-weight:500;color:var(--ac);line-height:1;animation:fu .6s var(--e) .7s both}
+.sd{display:inline-flex;align-items:center;gap:.2rem;font-size:.82rem;font-weight:600;color:var(--ac);padding:.2rem .55rem;background:var(--ac-m);border-radius:100px}
+.sl{font-size:.72rem;color:var(--t3);letter-spacing:.05em;margin-top:.4rem}
+.bars{display:flex;flex-direction:column;gap:.6rem}
+.br{display:flex;align-items:center;gap:.7rem}
+.bn{font-size:.7rem;font-weight:500;color:var(--t2);width:78px;text-align:right;flex-shrink:0}
+.btr{flex:1;height:26px;background:rgba(255,255,255,.02);border-radius:6px;overflow:hidden;position:relative}
+.bf{height:100%;border-radius:6px;position:relative;animation:bg 1.2s var(--eo) 1s both}
+.bf::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent 60%,rgba(255,255,255,.08));border-radius:6px}
+.bf1{width:62%;background:linear-gradient(90deg,var(--ac3),var(--ac2))}
+.bf2{width:24%;background:linear-gradient(90deg,#D4A020,var(--gd))}
+.bf3{width:14%;background:linear-gradient(90deg,#E05555,var(--rd))}
+.bv{font-size:.72rem;font-weight:600;color:var(--t2);width:34px;flex-shrink:0;text-align:right}
+
+/* Float cards */
+.ic{position:absolute;background:linear-gradient(135deg,var(--sf) 0%,var(--bg2) 100%);border:1px solid var(--b2);border-radius:12px;padding:.85rem 1.15rem;box-shadow:0 12px 32px rgba(0,0,0,.35);z-index:3}
+.ic1{top:-20px;right:-28px;animation:fl 6s ease-in-out infinite}
+.ic2{bottom:32px;left:-32px;animation:fr 7s ease-in-out infinite 1.5s}
+.il{font-size:.58rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.12em;margin-bottom:.25rem}
+.iv{font-family:var(--f1);font-size:1.05rem;font-weight:500}
+.iv.p{color:var(--ac)}.iv.w{color:var(--gd)}
+
+/* TRUST */
+.tb{padding:3.5rem 0;border-top:1px solid var(--b1);border-bottom:1px solid var(--b1);position:relative;overflow:hidden}
+.tb::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--ac-g),transparent)}
+.ti{display:flex;align-items:center;justify-content:center;gap:4rem;flex-wrap:wrap}
+.tl{font-size:.68rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.14em}
+.ts{text-align:center;position:relative}
+.ts::before{content:'';position:absolute;left:-2rem;top:50%;transform:translateY(-50%);width:1px;height:24px;background:var(--b2)}
+.ts:first-of-type::before{display:none}
+.ts strong{display:block;font-family:var(--f1);font-size:1.7rem;font-weight:500;color:var(--t1);letter-spacing:-.02em}
+.ts span{font-size:.72rem;font-weight:400;color:var(--t3);letter-spacing:.02em}
+
+/* SECTIONS */
+.sec{padding:7.5rem 0;position:relative}
+.se{font-size:.68rem;font-weight:600;color:var(--ac);text-transform:uppercase;letter-spacing:.16em;margin-bottom:.85rem;display:flex;align-items:center;gap:.75rem}
+.se::before{content:'';width:24px;height:1px;background:var(--ac)}
+.sh{font-family:var(--f1);font-size:2.85rem;font-weight:400;line-height:1.1;letter-spacing:-.03em;margin-bottom:1.1rem;max-width:580px}
+.ss{font-size:1.02rem;font-weight:300;color:var(--t2);line-height:1.75;max-width:500px;margin-bottom:4rem}
+
+/* STEPS */
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;position:relative}
+.sg::before{content:'';position:absolute;top:38px;left:calc(16.66% + 21px);right:calc(16.66% + 21px);height:1px;background:linear-gradient(90deg,var(--ac-g),var(--ac),var(--ac-g));opacity:.2}
+.sc{background:linear-gradient(175deg,var(--bg3) 0%,var(--bg2) 100%);border:1px solid var(--b1);border-radius:18px;padding:2.5rem 2rem 2.25rem;transition:all .45s var(--e);position:relative}
+.sc::before{content:'';position:absolute;inset:-1px;border-radius:18px;padding:1px;background:linear-gradient(175deg,var(--ba),transparent 50%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .45s var(--e)}
+.sc:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+.sc:hover::before{opacity:1}
+.snum{width:44px;height:44px;background:var(--ac-m);border:1.5px solid rgba(0,232,184,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--f1);font-size:1.05rem;font-weight:500;color:var(--ac);margin-bottom:1.5rem;position:relative;z-index:1}
+.sc h3{font-family:var(--f1);font-size:1.3rem;font-weight:400;letter-spacing:-.02em;margin-bottom:.65rem}
+.sc p{font-size:.88rem;font-weight:300;color:var(--t2);line-height:1.7}
+
+/* INDUSTRIES */
+.is{background:radial-gradient(ellipse 80% 50% at 50% 0%,var(--ac-u),transparent),var(--bg)}
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.icd{background:linear-gradient(175deg,var(--bg3) 0%,var(--bg) 100%);border:1px solid var(--b1);border-radius:18px;padding:2.5rem 2rem;text-align:center;transition:all .45s var(--e);position:relative;overflow:hidden}
+.icd::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--ac),transparent);opacity:0;transition:opacity .45s var(--e)}
+.icd:hover{transform:translateY(-4px);border-color:var(--b2);box-shadow:0 12px 40px rgba(0,0,0,.2)}
+.icd:hover::after{opacity:.5}
+.ii{width:56px;height:56px;margin:0 auto 1.25rem;background:var(--ac-m);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.icd h3{font-family:var(--f1);font-size:1.25rem;font-weight:400;margin-bottom:.5rem}
+.ibr{font-size:.78rem;font-weight:400;color:var(--t2);line-height:1.6;margin-bottom:1.25rem}
+.itg{display:inline-flex;align-items:center;gap:.4rem;font-size:.65rem;font-weight:600;color:var(--ac);text-transform:uppercase;letter-spacing:.08em;padding:.35rem .85rem;background:var(--ac-m);border-radius:100px}
+.itd{width:4px;height:4px;background:var(--ac);border-radius:50%;animation:pu 2s infinite}
+
+/* WAITLIST */
+.wl{padding:7rem 0 6rem;text-align:center;position:relative;overflow:hidden}
+.wo{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:400px;background:radial-gradient(ellipse,var(--ac-g) 0%,transparent 60%);pointer-events:none}
+.wi{position:relative;z-index:1}
+.wl h2{font-family:var(--f1);font-size:3.2rem;font-weight:400;letter-spacing:-.03em;margin-bottom:.85rem}
+.wl h2 em{color:var(--ac);font-style:italic}
+.wd{font-size:1.02rem;font-weight:300;color:var(--t2);max-width:440px;margin:0 auto 2.5rem;line-height:1.7}
+
+/* Custom form */
+.wf{max-width:480px;margin:0 auto;position:relative}
+.wf-row{display:flex;gap:.5rem;padding:6px;background:var(--bg3);border:1px solid var(--b2);border-radius:100px;transition:border-color .3s var(--e),box-shadow .3s var(--e)}
+.wf-row:focus-within{border-color:var(--ac);box-shadow:0 0 0 3px var(--ac-m),0 8px 32px rgba(0,0,0,.3)}
+.wf-input{flex:1;padding:.8rem 1.4rem;background:transparent;border:none;color:var(--t1);font-family:var(--f2);font-size:.92rem;font-weight:400;outline:none;min-width:0}
+.wf-input::placeholder{color:var(--t3)}
+.wf-btn{padding:.75rem 1.6rem;background:var(--ac);color:var(--bg);border:none;border-radius:100px;font-family:var(--f2);font-size:.85rem;font-weight:600;cursor:pointer;transition:all .35s var(--e);white-space:nowrap;display:flex;align-items:center;gap:.4rem;letter-spacing:.01em}
+.wf-btn:hover{background:var(--ac2);box-shadow:0 4px 20px var(--ac-gs)}
+.wf-btn:active{transform:scale(.97)}
+.wf-btn svg{transition:transform .3s var(--e)}.wf-btn:hover svg{transform:translateX(3px)}
+
+/* Success state */
+.wf-success{display:none;padding:1.25rem 2rem;background:var(--ac-m);border:1px solid var(--ba);border-radius:100px;text-align:center}
+.wf-success.show{display:block;animation:fu .5s var(--e)}
+.wf-success p{font-size:.92rem;font-weight:500;color:var(--ac)}
+.wf-row.hide{display:none}
+
+/* Count */
+.wf-count{margin-top:1.25rem;font-size:.78rem;color:var(--t3);display:flex;align-items:center;justify-content:center;gap:.5rem}
+.wf-count-dot{width:5px;height:5px;background:var(--ac);border-radius:50%;animation:pu 2s infinite}
+
+.wn{font-size:.75rem;color:var(--t3);margin-top:1rem;letter-spacing:.02em}
+
+/* FOOTER */
+footer{padding:3rem 0;border-top:1px solid var(--b1)}
+.fi{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.fb{font-family:var(--f1);font-size:1.1rem;font-weight:500}
+.fb span{color:var(--ac)}
+.fp{font-size:.7rem;font-weight:400;color:var(--t3);letter-spacing:.06em;text-transform:uppercase}
+.fcp{font-size:.72rem;color:var(--t3)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hl{grid-template-columns:1fr;text-align:center;gap:3rem}
+  .hc{max-width:100%}.hero h1{font-size:2.8rem}.hp{max-width:100%;margin-left:auto;margin-right:auto}
+  .ha{justify-content:center;flex-wrap:wrap}.hv{max-width:440px;margin:0 auto}
+  .ic{display:none}.sg,.ig{grid-template-columns:1fr;max-width:420px;margin-left:auto;margin-right:auto}
+  .sg::before{display:none}.sh{font-size:2.1rem}.wl h2{font-size:2.2rem}
+  .fi{flex-direction:column;text-align:center}.ti{gap:2rem}.nl{display:none}
+  .se{justify-content:center}.sh,.ss{margin-left:auto;margin-right:auto;text-align:center}
+  .wf-row{flex-direction:column;border-radius:16px;gap:0}
+  .wf-input{text-align:center;padding:1rem}
+  .wf-btn{border-radius:12px;justify-content:center;padding:.85rem}
+}
+@media(max-width:480px){
+  .hero h1{font-size:2.2rem}.ha{flex-direction:column;align-items:stretch}
+  .bp,.bs{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="c ni">
+  <a href="#" class="lo">Vantage<span class="ld">.</span></a>
+  <div class="nr">
+    <a href="#how" class="nl">How It Works</a>
+    <a href="#ind" class="nl">Industries</a>
+    <a href="#waitlist" class="nc">Join Waitlist</a>
+  </div>
+</div></nav>
+
+<section class="hero">
+  <div class="ho ho1"></div><div class="ho ho2"></div><div class="ho ho3"></div><div class="hgb"></div>
+  <div class="c hl">
+    <div class="hc">
+      <div class="hb"><span class="bi"><span class="bd"></span></span><span class="bt">Coming Q2 2026 — South Africa</span></div>
+      <h1>Your customers are already talking.<br><em>We help you listen.</em></h1>
+      <p class="hp">Vantage uses AI to analyse HelloPeter reviews, support tickets, and customer feedback — surfacing the CX insights companies miss. No surveys required.</p>
+      <div class="ha">
+        <a href="#waitlist" class="btn bp">Join the Waitlist <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#how" class="btn bs">See How It Works</a>
+      </div>
+    </div>
+    <div class="hv">
+      <div class="rc">
+        <div class="ch"><span class="ct">SA Banking CX Report — 2026</span><span class="cg">AI Generated</span></div>
+        <div class="sb">
+          <div class="srow"><span class="sn">74</span><span class="sd"><svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 11V3m0 0L3 7m4-4l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>+6</span></div>
+          <div class="sl">Vantage CX Score — #1 Ranked Bank</div>
+        </div>
+        <div class="bars">
+          <div class="br"><span class="bn">Promoters</span><div class="btr"><div class="bf bf1"></div></div><span class="bv">62%</span></div>
+          <div class="br"><span class="bn">Passives</span><div class="btr"><div class="bf bf2"></div></div><span class="bv">24%</span></div>
+          <div class="br"><span class="bn">Detractors</span><div class="btr"><div class="bf bf3"></div></div><span class="bv">14%</span></div>
+        </div>
+        <div class="ic ic1"><div class="il">Sentiment</div><div class="iv p">78% Positive</div></div>
+        <div class="ic ic2"><div class="il">Top Risk</div><div class="iv w">Wait Times ⚠</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tb"><div class="c ti">
+  <span class="tl">Launching With</span>
+  <div class="ts"><strong>3</strong><span>Industries</span></div>
+  <div class="ts"><strong>12</strong><span>SA brands analysed</span></div>
+  <div class="ts"><strong>1000s</strong><span>HelloPeter reviews</span></div>
+</div></section>
+
+<section id="how" class="sec"><div class="c">
+  <div class="se rv">How It Works</div>
+  <h2 class="sh rv">CX intelligence from data you already have</h2>
+  <p class="ss rv">No surveys to send. No integrations to configure. Vantage analyses public and private customer signals and turns them into actionable insight.</p>
+  <div class="sg">
+    <div class="sc rv"><div class="snum">1</div><h3>We Collect the Signals</h3><p>HelloPeter reviews, Google ratings, support tickets, social mentions — your customers are leaving feedback everywhere. We gather it all into one place.</p></div>
+    <div class="sc rv"><div class="snum">2</div><h3>AI Analyses Everything</h3><p>Our engine reads every piece of feedback, classifies sentiment, extracts recurring themes, and calculates your Vantage CX Score — a 0–100 benchmark.</p></div>
+    <div class="sc rv"><div class="snum">3</div><h3>You Get the Intelligence</h3><p>Receive a presentation-ready report with ranked scores, theme breakdowns, risk flags, and prioritised recommendations you can act on immediately.</p></div>
+  </div>
+</div></section>
+
+<section id="ind" class="sec is"><div class="c">
+  <div class="se rv">First Reports Dropping Soon</div>
+  <h2 class="sh rv">Which SA brands are winning on customer experience?</h2>
+  <p class="ss rv">We're analysing thousands of HelloPeter reviews across three industries. The first free CX comparison reports launch soon.</p>
+  <div class="ig">
+    <div class="icd rv"><div class="ii">🏦</div><h3>Banking</h3><p class="ibr">Capitec · FNB · Standard Bank · Nedbank</p><span class="itg"><span class="itd"></span>Report 1 — Coming Soon</span></div>
+    <div class="icd rv"><div class="ii">📡</div><h3>Telecoms</h3><p class="ibr">Vodacom · MTN · Telkom · Rain</p><span class="itg"><span class="itd"></span>Report 2 — Coming Soon</span></div>
+    <div class="icd rv"><div class="ii">🛡️</div><h3>Insurance</h3><p class="ibr">Discovery · Outsurance · Momentum · Santam</p><span class="itg"><span class="itd"></span>Report 3 — Coming Soon</span></div>
+  </div>
+</div></section>
+
+<section id="waitlist" class="wl">
+  <div class="wo"></div>
+  <div class="c wi"><div class="rv">
+    <h2>Be first to see<br>the <em>results.</em></h2>
+    <p class="wd">Join the waitlist for each industry CX report the moment it drops — plus early access to the Vantage platform.</p>
+
+    <div class="wf">
+      <div class="wf-row" id="formRow">
+        <input type="email" class="wf-input" id="emailInput" placeholder="Enter your email address" required autocomplete="email">
+        <button type="button" class="wf-btn" id="submitBtn" onclick="submitWaitlist()">
+          Join Waitlist
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <div class="wf-success" id="successMsg">
+        <p>You're on the list. We'll be in touch soon.</p>
+      </div>
+      <div class="wf-count">
+        <span class="wf-count-dot"></span>
+        Spots are limited — be among the first to know
+      </div>
+    </div>
+
+    <p class="wn">No spam, ever. Just CX intelligence for South African businesses.</p>
+  </div></div>
+  <iframe name="gform-target" id="gform-target" style="display:none"></iframe>
+</section>
+
+<footer><div class="c fi">
+  <div class="fb">Vantage<span>.</span></div>
+  <div class="fp">An Onyx Mercer Product</div>
+  <div class="fcp">&copy; 2026 Onyx Mercer (Pty) Ltd. All rights reserved.</div>
+</div></footer>
+
+<script>
+const o=new IntersectionObserver(e=>{e.forEach((x,i)=>{if(x.isIntersecting){setTimeout(()=>x.target.classList.add('v'),i*60);o.unobserve(x.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(e=>o.observe(e));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}})});
+const n=document.querySelector('nav');window.addEventListener('scroll',()=>{n.style.background=window.scrollY>60?'rgba(5,5,8,.88)':'rgba(5,5,8,.6)'});
+
+// Submit to Google Forms
+function submitWaitlist(){
+  const email=document.getElementById('emailInput').value.trim();
+  if(!email||!email.includes('@')){
+    document.getElementById('emailInput').style.borderColor='var(--rd)';
+    document.getElementById('emailInput').setAttribute('placeholder','Please enter a valid email');
+    return;
+  }
+  const btn=document.getElementById('submitBtn');
+  btn.textContent='Joining...';
+  btn.style.opacity='0.7';
+  btn.style.pointerEvents='none';
+
+  const formURL='https://docs.google.com/forms/d/e/1FAIpQLSdlOaTRjzbMft7e0Euhnf9tD0FtwJvechbIJ6hiweEWlA5HTg/formResponse';
+  const formData=new FormData();
+  formData.append('entry.1409001798',email);
+
+  fetch(formURL,{method:'POST',mode:'no-cors',body:formData}).then(()=>{
+    document.getElementById('formRow').classList.add('hide');
+    document.getElementById('successMsg').classList.add('show');
+  }).catch(()=>{
+    document.getElementById('formRow').classList.add('hide');
+    document.getElementById('successMsg').classList.add('show');
+  });
+}
+
+// Enter key submit
+document.getElementById('emailInput').addEventListener('keydown',e=>{if(e.key==='Enter')submitWaitlist()});
+</script>
+</body>
+</html>
